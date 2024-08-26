@@ -14,7 +14,7 @@
    
   ::-webkit-scrollbar-thumb {
     background: rgb(0 37 255);
-    border-radius: 10px;
+    hero-radius: 10px;
   }
   
 
@@ -145,17 +145,24 @@ input:checked  ~ .toogle-items{
 .hero-main-section{
     display: flex;
     background-color: black;
-    padding: 1rem 2rem;
+    padding: 3rem 2rem;
 }
 .hero-image{
     flex: 1;
     text-align: center;
     padding-top: 4rem;
-}
-.hero-image img{
-    width: 40%;    
+    position:relative;
 }
 
+
+.gif{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 60%;
+    min-width: 40%;
+}
 
 .hero-content{
     display:flex;
@@ -517,6 +524,9 @@ button,img{
     .dropout-right i{
         width:70%;
         text-align: center;
+    }
+    .gif{
+        top: 60%;
     }
 
     
